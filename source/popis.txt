@@ -1,0 +1,74 @@
+Glassdoor Job Reviews
+https://www.kaggle.com/datasets/davidgauthier/glassdoor-job-reviews
+format: csv
+description:
+    firm - Name of the company
+    date_review - date when review was posted
+    job_title - reviees job title
+    current - info whether the emplyee is still emplyed by this company, of if they left already. In some cases there is also info in months.
+    location - location where the job should be done
+    overall_rating - overall rating ... {1, 5}
+    work_life_balance - work life balance rating {1, 5}
+    culture_values - culture values rating {1, 5}
+    diversity_inclusion - rating of diversity and inclusion together {1, 5}
+    career_opp - career opportunities rating {1, 5}
+    comp_benefits - company benefits rating {1, 5}
+    senior_mgmt - senior managerment rating {1, 5}
+    recommend - does omployee recommend this company to others (v/r/x/o)
+    ceo_approv - does employee approve of the CEO (v/r/x/o)
+    outlook - future outlook of the company (v/r/x/o)
+    headline - headline of the review (v/r/x/o)
+    pros - pros (duh)
+    cons - cons
+where
+    (v/r/x/o) = v - Positive, r - Mild, x - Negative, o - No opinion
+    {1, 5} - 1 worst, 5 best
+
+
+Online Job Postings
+https://www.kaggle.com/datasets/madhab/jobposts
+format: csv
+description:
+    jobpost – original jobpost from which the rest of the columns are derived from
+    date – post date
+    Title – job title
+    Company - name of the eployment company
+    AnnouncementCode – ignore (usually missing)
+    Term – work time/load (Full-Time, Part-time, etc)
+    Eligibility -- eligibility/requirements/qualification of employee
+    Audience --- eligibility/requirements/qualification of employee
+    StartDate – start date
+    Duration - duration of the employment
+    Location – location where the job should be done
+    JobDescription – job description
+    JobRequirment - job requirements
+    RequiredQual - required qualification
+    Salary - salary (usually null or some non numeric value)
+    ApplicationP – application procedure
+    OpeningDate – opening date of the job announcement
+    Deadline – deadline for the job announcement
+    Notes - additional Notes
+    AboutC - about the company
+    Attach - attachments
+    Year - year of the announcement (derived from the field date)
+    Month - month of the announcement (derived from the field date)
+    IT – TRUE if the job is an IT job. This variable is created by a simple search of IT job titles within column “Title”
+
+
+Udemy Courses
+https://www.kaggle.com/datasets/thedevastator/udemy-courses-revenue-generation-and-course-anal
+format: csv
+description:
+there are 5 different tables, but all of them have the same structure, so they can be concatated
+Entry Level Project Sheet - missing level => entry level
+    course_title - The title of the Udemy course. (String)
+    url - The URL of the Udemy course. (String)
+    price - The price of the Udemy course. (Float)
+    num_subscribers - The number of subscribers for the Udemy course. (Integer)
+    num_reviews - The number of reviews for the Udemy course. (Integer)
+    num_lectures - The number of lectures in the Udemy course. (Integer)
+    level - The level of the Udemy course. (String)
+    Rating - The rating of the Udemy course. (Float)
+    content_duration - The content duration of the Udemy course. (Float)
+    published_timestamp - The timestamp of when the Udemy course was published. (Datetime)
+    subject - The subject of the Udemy course. (String)
