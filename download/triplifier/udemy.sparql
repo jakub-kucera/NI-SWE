@@ -1,0 +1,31 @@
+# dc: http://purl.org/dc/elements/1.1/
+PREFIX ex: <http://ex.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+CONSTRUCT {
+	?coure_uri a ex:course;
+		ex:url ?coure_uri;
+		ex:title ?course_title_url;
+		ex:price ?price_int;
+		ex:num_subscribers ?num_subscribers_int;
+		ex:num_reviews ?num_reviews_int;
+		ex:num_lectures ?num_lectures_int;
+		ex:level ?level_str;
+		ex:rating ?rating_float;
+		ex:content_duration ?content_duration_float;
+		ex:subject ?subject_str.
+} 
+FROM <file:3.1-data-sheet-udemy-courses-web-development.csv>
+WHERE {
+	BIND (URI(?url) AS ?coure_uri)
+	BIND (STRLANG(?course_title,"en") AS ?course_title_url)
+	BIND (xsd:integer(?price) AS ?price_int)
+	BIND (xsd:integer(?num_subscribers) AS ?num_subscribers_int)
+	BIND (xsd:integer(?num_reviews) AS ?num_reviews_int)
+	BIND (xsd:integer(?num_lectures) AS ?num_lectures_int)
+	BIND(STRLANG(?level,"en") as ?level_str)
+	BIND (xsd:float(?Rating) AS ?rating_float)
+	BIND (xsd:float(?content_duration) AS ?content_duration_float)
+	BIND(STRLANG(?subject,"en") as ?subject_str)
+	
+}

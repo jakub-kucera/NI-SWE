@@ -1,0 +1,59 @@
+# dc: http://purl.org/dc/elements/1.1/
+PREFIX ex: <http://ex.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+CONSTRUCT {
+  # ?company a ex:Company:
+		
+	?posting_id a ex:posting;
+		# jobpost
+		ex:date ?post_date;
+		ex:title ?title_str;
+		ex:company ?company_id;
+		# AnnouncementCode
+		ex:term ?term_str;
+		ex:eligibility ?eligibility_str;
+		ex:audience ?audience_str;
+		# StartDate
+		# Duration
+		# Location
+		ex:job_description ?job_description_str;
+		ex:job_requirment ?job_requirment_str;
+		ex:required_qualification ?required_qual_str;
+		ex:salary ?salary_str;
+		ex:application_procedure ?application_prod_str;
+		ex:notes ?notes_str;
+		ex:attach ?attach_str.
+		# OpeningDate
+		# Deadline
+
+		# Year
+		# Month
+		# IT
+
+	?company_id a ex:company;
+    ex:name ?company_name;
+    ex:about ?about_company.
+
+} 
+FROM <file:data\ job\ posts.csv>
+WHERE {
+	# BIND ( STRUUID() AS ?review_id )
+	BIND (URI(CONCAT('http://ex.org/posting/', STRUUID())) AS ?posting_id)
+	BIND(xsd:date(?date) as ?post_date)
+	BIND(STRLANG(?Title,"en") as ?title_str)
+	BIND(STRLANG(?Term,"en") as ?term_str)
+	BIND(STRLANG(?Eligibility,"en") as ?eligibility_str)
+	BIND(STRLANG(?Audience,"en") as ?audience_str)
+	BIND(STRLANG(?JobDescription,"en") as ?job_description_str)
+	BIND(STRLANG(?JobRequirment,"en") as ?job_requirment_str)
+	BIND(STRLANG(?RequiredQual,"en") as ?required_qual_str)
+	BIND(STRLANG(?Salary,"en") as ?salary_str)
+	BIND(STRLANG(?ApplicationP,"en") as ?application_prod_str)
+	BIND(STRLANG(?Notes,"en") as ?notes_str)
+	BIND(STRLANG(?Attach,"en") as ?attach_str)
+
+	BIND (URI(CONCAT('http://ex.org/company/', ENCODE_FOR_URI(?Company))) AS ?company_id)
+	BIND(STRLANG(?Company,"en") as ?company_name)
+	BIND(STRLANG(?AboutC,"en") as ?about_company)
+}

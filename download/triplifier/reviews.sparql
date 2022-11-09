@@ -1,0 +1,66 @@
+# dc: http://purl.org/dc/elements/1.1/
+PREFIX ex: <http://ex.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+CONSTRUCT {
+  # ?company a ex:Company:
+		
+	?review_id a ex:review;
+		ex:company ?company_id;
+		ex:date ?date;
+		ex:job_title ?job_title_str;
+		# current
+		ex:location ?location_id;
+		ex:rating_overall_rating ?overall_rating_int;
+		ex:rating_work_life_balance ?work_life_balance_int;
+		ex:rating_culture_values ?culture_values_int;
+		ex:rating_diversity_inclusion ?diversity_inclusion_int;
+		ex:rating_career_opp ?career_opp_int;
+		ex:rating_comp_benefits ?comp_benefits_int;
+		ex:rating_senior_mgmt ?senior_mgmt_int;
+		# recommend
+		# ceo_approv
+		# outlook
+		# headline
+		ex:pros ?pros;
+		ex:cons ?cons.
+
+	?company_id a ex:company;
+    ex:name ?company_name.
+		# rdfs:label "Education level"@en;
+
+	?location_id a ex:location;
+    ex:adress ?location.
+
+  # ?review_id a ex:Review;
+  #   ex:firm ?firm;
+  #   # ex:name ?company;
+  #   # ex:employees ?numEmployees;
+  #   # ex:category ?category;
+  #   # ex:city ?city;
+  #   # ex:state ?state;
+  #   # ex:fundationDate ?fundedDate;
+  #   # ex:raisedAmt ?amount;
+  #   # ex:raisedCurrency ?raisedCurrency;
+  #   # ex:round ?round;
+} 
+FROM <file:glassdoor_reviews.csv>
+WHERE {
+	# BIND ( STRUUID() AS ?review_id )
+	BIND (URI(CONCAT('http://ex.org/review/', STRUUID())) AS ?review_id)
+	BIND(STRLANG(?job_title,"en") as ?job_title_str)
+	BIND(xsd:date(?date_review) as ?date)
+	BIND (xsd:integer(?overall_rating) AS ?overall_rating_int)
+	BIND (xsd:integer(?work_life_balance) AS ?work_life_balance_int)
+	BIND (xsd:integer(?culture_values) AS ?culture_values_int)
+	BIND (xsd:integer(?diversity_inclusion) AS ?diversity_inclusion_int)
+	BIND (xsd:integer(?career_opp) AS ?career_opp_int)
+	BIND (xsd:integer(?comp_benefits) AS ?comp_benefits_int)
+	BIND (xsd:integer(?senior_mgmt) AS ?senior_mgmt_int)
+	
+	
+	BIND (URI(CONCAT('http://ex.org/location/', ENCODE_FOR_URI(?location))) AS ?location_id)
+
+	BIND (URI(CONCAT('http://ex.org/company/', ?firm)) AS ?company_id)
+	BIND(STRLANG(?firm,"en") as ?company_name)
+}
