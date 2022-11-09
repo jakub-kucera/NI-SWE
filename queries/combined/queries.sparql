@@ -1,0 +1,66 @@
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ex: <http://ex.org/>
+
+
+# get company names (dataset:Glassdoor reviews)
+SELECT ?company_name WHERE {
+  ?company rdf:type ex:company ;
+		ex:name ?company_name.
+} LIMIT 10
+
+# check whether Apple is also in the reviewed companies (dataset:Glassdoor reviews)
+ASK
+WHERE {
+  ?company rdf:type ex:company ;
+		ex:name "Apple"@en
+} LIMIT 10
+
+# construct new triplets of dates and corresponding job position titles which were posted on those days (dataset:Glassdoor reviews)
+CONSTRUCT {
+  ?date ex:job_title ?title.
+}
+WHERE {
+  ?review rdf:type ex:review ;
+		ex:date ?date;
+		ex:job_title ?title.
+} LIMIT 10
+
+
+# get courses the are free (dadtaset: Udemy courses)
+SELECT ?url ?price WHERE {
+  ?course rdf:type ex:course ;
+		ex:url ?url;
+  		ex:price ?price.
+  FILTER (
+   ?price = 0
+  )
+}
+LIMIT 10
+
+
+# constructs new boolean value specifying whether this course is populare (over 100K subscribers) (dadtaset: Udemy courses)
+CONSTRUCT {
+	?course ex:is_popular ?is_popular 
+}
+where { 
+  ?course rdf:type ex:course ;
+		ex:num_subscribers ?num_subscribers.
+        BIND( (?num_subscribers > 100000) AS ?is_popular)
+       }
+
+
+# get names of those companies that dont post salary as part of job postings (dataset: Job Postings)
+SELECT ?company_name WHERE {
+  ?posting rdf:type ex:posting ;
+  		   ex:company ?company.
+  ?company ex:name ?company_name.
+  OPTIONAL {
+  	?posting ex:salary ?salary
+  }
+  FILTER (
+    ?salary = "NA"@en
+  )
+} LIMIT 10
+
