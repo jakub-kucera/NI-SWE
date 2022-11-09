@@ -1,0 +1,25 @@
+<https://www.udemy.com/learn-html5-programming-from-scratch/>
+        rdf:type             ex:course ;
+        ex:url               <https://www.udemy.com/learn-html5-programming-from-scratch/> ;
+        ex:title             "Learn HTML5 Programming From Scratch"@en ;
+        ex:price             0 ;
+        ex:num_subscribers   268923 ;
+        ex:num_reviews       8629 ;
+        ex:num_lectures      45 ;
+        ex:level             "Beginner Level"@en ;
+        ex:rating            "0.82"^^xsd:float ;
+        ex:content_duration  "10.5"^^xsd:float ;
+        ex:subject           "Subject: Web Development"@en .
+
+<https://www.udemy.com/coding-for-entrepreneurs-basic/>
+        rdf:type             ex:course ;
+        ex:url               <https://www.udemy.com/coding-for-entrepreneurs-basic/> ;
+        ex:title             "Coding for Entrepreneurs Basic"@en ;
+        ex:price             0 ;
+        ex:num_subscribers   161029 ;
+        ex:num_reviews       279 ;
+        ex:num_lectures      27 ;
+        ex:level             "Expert Level"@en ;
+        ex:rating            "0.69"^^xsd:float ;
+        ex:content_duration  "3.5"^^xsd:float ;
+        ex:subject           "Subject: Web Development"@en .

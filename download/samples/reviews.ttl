@@ -1,0 +1,33 @@
+<http://ex.org/review/bd2677dd-c5de-444e-96dd-b827edbb08c6>
+        rdf:type                  ex:review ;
+        ex:company                <http://ex.org/company/AFH-Wealth-Management> ;
+        ex:date                   "2015-04-05"^^xsd:date ;
+        ex:rating_overall_rating  2 ;
+        ex:pros                   "Very friendly and welcoming to new staff. Easy going ethic." ;
+        ex:cons                   "Poor salaries, poor training and communication." .
+
+<http://ex.org/company/AFH-Wealth-Management>
+        rdf:type  ex:company ;
+        ex:name  "AFH-Wealth-Management"@en .
+
+<http://ex.org/location/Bromsgrove%2C%20England%2C%20England>
+        rdf:type   ex:location ;
+        ex:adress  "Bromsgrove, England, England" .
+
+<http://ex.org/review/ceb6500b-fb70-4b36-92b6-38356db83e0c>
+        rdf:type                  ex:review ;
+        ex:company                <http://ex.org/company/AJ-Bell> ;
+        ex:date                   "2020-09-08"^^xsd:date ;
+        ex:job_title              " Automation Engineer"@en ;
+        ex:location               <http://ex.org/location/Manchester%2C%20England%2C%20England> ;
+        ex:rating_overall_rating  1 ;
+        ex:pros                   "Endless amounts of training on AJ Bell products and staff discount on Youinvest services allowed me to consolidate many old workplace pensions and get a better deal." ;
+        ex:cons                   "Pathological command and control culture. Managers completely detached from reality.\n\nAggressive senior member of staff using obscene language at daily stand up to describe other staff members and teams.\n\nManager behaving in misogynistic fashion making inappropriate comments to female members of staff and ignoring toxic behaviour within the team.\n\nPassive aggressive HR department \"We use a Bradford scoring system, so don't ever get sick\". Bombarding everyone with pointless, endless mandatory training courses.\n\nAncient tech stack, rotten code base, irrational resistance to refactoring, changing or upgrading existing code." .
+
+<http://ex.org/company/AJ-Bell>
+        rdf:type  ex:company ;
+        ex:name  "AJ-Bell"@en .
+
+<http://ex.org/location/Manchester%2C%20England%2C%20England>
+        rdf:type   ex:location ;
+        ex:adress  "Manchester, England, England" .
