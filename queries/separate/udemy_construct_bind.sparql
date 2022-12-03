@@ -1,0 +1,14 @@
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ex: <http://ex.org/>
+
+# constructs new boolean value specifying whether this course is populare (over 100K subscribers) (dadtaset: Udemy courses)
+CONSTRUCT {
+	?course ex:is_popular ?is_popular 
+}
+where { 
+  ?course rdf:type ex:course ;
+		ex:num_subscribers ?num_subscribers.
+        BIND( (?num_subscribers > 100000) AS ?is_popular)
+       }

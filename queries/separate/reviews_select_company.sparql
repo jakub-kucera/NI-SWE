@@ -1,0 +1,11 @@
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ex: <http://ex.org/>
+
+
+# get company names (dataset:Glassdoor reviews)
+SELECT ?company_name WHERE {
+  ?company rdf:type ex:company ;
+		ex:name ?company_name.
+} LIMIT 10
