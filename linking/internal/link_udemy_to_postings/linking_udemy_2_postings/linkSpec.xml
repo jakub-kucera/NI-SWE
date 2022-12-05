@@ -1,0 +1,41 @@
+<Interlink id="linking_udemy_2_postings">
+  <MetaData>
+    <Label></Label>
+    <Description></Description>
+    <Modified>2022-12-04T14:31:22.208Z</Modified>
+  </MetaData>
+  <SourceDataset dataSource="udemy" var="a" typeUri="http://ex.org/course">
+    <RestrictTo> </RestrictTo>
+  </SourceDataset>
+  <TargetDataset dataSource="postings" var="b" typeUri="http://ex.org/posting">
+    <RestrictTo> </RestrictTo>
+  </TargetDataset>
+  <LinkageRule linkType="&lt;http://ex.org/is_course_on&gt;">
+    <Aggregate id="max1" required="false" weight="1" type="max">
+      <Compare id="levenshteinDistance2" required="false" weight="1" metric="levenshteinDistance" threshold="10.0" indexing="true">
+        <TransformInput id="lowerCase1" function="lowerCase">
+          <Input id="sourcePath3" path="/&lt;http://ex.org/subject&gt;"/>
+        </TransformInput>
+        <TransformInput id="lowerCase2" function="lowerCase">
+          <Input id="targetPath2" path="/&lt;http://ex.org/title&gt;"/>
+        </TransformInput>
+        <Param name="minChar" xml:space="preserve"><![CDATA[0]]></Param>
+        <Param name="maxChar" xml:space="preserve"><![CDATA[z]]></Param>
+      </Compare>
+      <Compare id="levenshteinDistance1" required="false" weight="1" metric="levenshteinDistance" threshold="10.0" indexing="true">
+        <TransformInput id="lowerCase4" function="lowerCase">
+          <Input id="sourcePath2" path="/&lt;http://ex.org/title&gt;"/>
+        </TransformInput>
+        <TransformInput id="lowerCase3" function="lowerCase">
+          <Input id="targetPath1" path="/&lt;http://ex.org/title&gt;"/>
+        </TransformInput>
+        <Param name="minChar" xml:space="preserve"><![CDATA[0]]></Param>
+        <Param name="maxChar" xml:space="preserve"><![CDATA[z]]></Param>
+      </Compare>
+    </Aggregate>
+    <Filter limit="10"/>
+  </LinkageRule>
+  <Outputs>
+    <Output id="udemy_to_postings"></Output>
+  </Outputs>
+</Interlink>

@@ -1,0 +1,22 @@
+PREFIX dbr: <http://dbpedia.org/resource#>
+PREFIX dbo: <http://dbpedia.org/ontology#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX ex: <http://ex.org/>
+
+
+# gets courses and and job posting with similar enought job position to the course topic. Also gets the positions salaries.
+SELECT ?course_url ?course_price ?position ?salary WHERE {
+  ?course rdf:type ex:course ;
+		ex:url ?course_url;
+  		ex:price ?course_price;
+    	ex:is_course_on ?posting.
+  ?posting ex:salary ?salary;
+           ex:title ?position.
+  FILTER (
+	?salary != "NA"@en
+  )
+}
+LIMIT 100

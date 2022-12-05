@@ -1,0 +1,22 @@
+PREFIX dbr: <http://dbpedia.org/resource#>
+PREFIX dbo: <http://dbpedia.org/ontology#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX ex: <http://ex.org/>
+
+
+# gets job postings and for the posting companies prints the averate overall rating of the company from GlassDoor
+SELECT ?posting ?company_name ((AVG (?overall_rating)) as ?avg_rating) WHERE {
+  ?posting rdf:type ex:posting ;
+           ex:company ?posting_company.
+  ?posting_company owl:sameAs ?internal_company.
+  ?internal_company rdf:type ex:company.
+  ?internal_company ex:name ?company_name.
+  ?review ex:company ?internal_company;
+          ex:rating_overall_rating ?overall_rating.
+  ?review ex:job_title ?job_title.
+} 
+GROUP BY ?posting ?company_name
+LIMIT 10

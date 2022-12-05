@@ -1,0 +1,46 @@
+<Pair>
+  <Source>
+    <EntityDescription>
+      <Type>http://ex.org/company</Type>
+      <Restriction></Restriction>
+      <Paths>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://ex.org/about&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> \&lt;http://ex.org/company&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://ex.org/name&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+      </Paths>
+    </EntityDescription>
+  </Source>
+  <Target>
+    <EntityDescription>
+      <Type>http://ex.org/company</Type>
+      <Restriction></Restriction>
+      <Paths>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://ex.org/name&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> \&lt;http://ex.org/company&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+      </Paths>
+    </EntityDescription>
+  </Target>
+</Pair>

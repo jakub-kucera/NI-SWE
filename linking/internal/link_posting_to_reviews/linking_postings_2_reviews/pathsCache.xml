@@ -1,0 +1,102 @@
+<Pair>
+  <Source>
+    <EntityDescription>
+      <Type>http://ex.org/posting</Type>
+      <Restriction></Restriction>
+      <Paths>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://ex.org/application_procedure&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://ex.org/attach&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://ex.org/audience&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://ex.org/eligibility&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://ex.org/job_description&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://ex.org/job_requirment&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://ex.org/notes&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://ex.org/required_qualification&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://ex.org/salary&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://ex.org/term&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://ex.org/company&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://ex.org/title&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+      </Paths>
+    </EntityDescription>
+  </Source>
+  <Target>
+    <EntityDescription>
+      <Type>http://ex.org/review</Type>
+      <Restriction></Restriction>
+      <Paths>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://ex.org/company&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://ex.org/cons&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://ex.org/date&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://ex.org/pros&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://ex.org/rating_overall_rating&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://ex.org/job_title&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://ex.org/location&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+      </Paths>
+    </EntityDescription>
+  </Target>
+</Pair>

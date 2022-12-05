@@ -1,0 +1,12 @@
+<Dataset id="Posting_companies_to_reviews" type="file" uriProperty="">
+  <MetaData>
+    <Label></Label>
+    <Description></Description>
+    <Modified>2022-12-04T14:55:10.575Z</Modified>
+  </MetaData>
+  <Param name="format" xml:space="preserve"><![CDATA[N-Triples]]></Param>
+  <Param name="maxReadSize" xml:space="preserve"><![CDATA[100]]></Param>
+  <Param name="file" xml:space="preserve"><![CDATA[postingss_companies_2_review]]></Param>
+  <Param name="graph" xml:space="preserve"><![CDATA[]]></Param>
+  <Param name="entityList" xml:space="preserve"><![CDATA[]]></Param>
+</Dataset>

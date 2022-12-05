@@ -1,0 +1,274 @@
+<Pair>
+  <Source>
+    <EntityDescription>
+      <Type>http://ex.org/company</Type>
+      <Restriction></Restriction>
+      <Paths>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://ex.org/about&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> \&lt;http://ex.org/company&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://ex.org/name&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+      </Paths>
+    </EntityDescription>
+  </Source>
+  <Target>
+    <EntityDescription>
+      <Type>http://dbpedia.org/ontology/Company</Type>
+      <Restriction></Restriction>
+      <Paths>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://dbpedia.org/ontology/wikiPageWikiLink&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> \&lt;http://dbpedia.org/ontology/wikiPageWikiLink&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://www.w3.org/2002/07/owl#sameAs&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://dbpedia.org/property/wikiPageUsesTemplate&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://purl.org/dc/terms/subject&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://www.w3.org/2000/01/rdf-schema#label&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://dbpedia.org/ontology/abstract&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://www.w3.org/2000/01/rdf-schema#comment&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://dbpedia.org/ontology/wikiPageExternalLink&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> \&lt;http://dbpedia.org/ontology/wikiPageRedirects&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://xmlns.com/foaf/0.1/depiction&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> \&lt;http://dbpedia.org/property/label&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://dbpedia.org/ontology/wikiPageRevisionID&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://dbpedia.org/ontology/wikiPageID&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://dbpedia.org/ontology/wikiPageLength&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://xmlns.com/foaf/0.1/isPrimaryTopicOf&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://www.w3.org/ns/prov#wasDerivedFrom&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> \&lt;http://dbpedia.org/ontology/recordLabel&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> \&lt;http://xmlns.com/foaf/0.1/primaryTopic&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://purl.org/linguistics/gold/hypernym&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://xmlns.com/foaf/0.1/name&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://dbpedia.org/property/name&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://dbpedia.org/ontology/thumbnail&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://dbpedia.org/property/keyPeople&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://dbpedia.org/property/industry&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://dbpedia.org/ontology/foundingYear&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> \&lt;http://dbpedia.org/ontology/distributor&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://xmlns.com/foaf/0.1/homepage&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://dbpedia.org/ontology/industry&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://dbpedia.org/property/products&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://dbpedia.org/ontology/location&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://dbpedia.org/property/type&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://dbpedia.org/ontology/product&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> \&lt;http://dbpedia.org/ontology/publisher&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> \&lt;http://dbpedia.org/property/distributor&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://dbpedia.org/property/logo&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://dbpedia.org/property/location&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> \&lt;http://dbpedia.org/property/publisher&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://dbpedia.org/ontology/type&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://dbpedia.org/property/foundation&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> \&lt;http://dbpedia.org/ontology/owner&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://dbpedia.org/property/founder&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://dbpedia.org/property/homepage&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://dbpedia.org/ontology/keyPerson&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://dbpedia.org/property/areaServed&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://dbpedia.org/property/locationCity&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://dbpedia.org/property/numEmployees&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://dbpedia.org/ontology/numberOfEmployees&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://dbpedia.org/property/parent&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://dbpedia.org/property/locationCountry&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://dbpedia.org/ontology/regionServed&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://dbpedia.org/property/founded&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://dbpedia.org/ontology/parentCompany&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://dbpedia.org/ontology/headquarter&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://schema.org/sameAs&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://dbpedia.org/property/website&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://dbpedia.org/property/subsid&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://dbpedia.org/property/wordnet_type&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+        <TypedPath isAttribute="false">
+          <Path> /&lt;http://dbpedia.org/ontology/foundedBy&gt; </Path>
+          <ValueType nodeType="StringValueType"/>
+        </TypedPath>
+      </Paths>
+    </EntityDescription>
+  </Target>
+</Pair>

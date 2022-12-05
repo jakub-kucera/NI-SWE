@@ -1,0 +1,3 @@
+<http://ex.org/company/BHS> <http://www.w3.org/2002/07/owl#sameAs> <http://ex.org/company/BHS> .
+<http://ex.org/company/Next> <http://www.w3.org/2002/07/owl#sameAs> <http://ex.org/company/next> .
+<http://ex.org/company/Debenhams> <http://www.w3.org/2002/07/owl#sameAs> <http://ex.org/company/Debenhams> .
