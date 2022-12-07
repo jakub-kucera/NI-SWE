@@ -1,0 +1,82 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix qb:  <http://purl.org/linked-data/cube#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sdmx-code:  <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix : <http://www.ex.org/> .
+
+:catalog
+    a dcat:Catalog ;
+    dct:title "NIE-SWE semestral project 2022/23"@en ;
+    dct:description "Catalog of Glassdoor reviews, job postings and Udemy courses that are related to each other"@en ;
+    rdfs:label "NIE-SWE semestral project 2022/23"@en ;
+    foaf:homepage <http://ex.org/> ;
+    dct:publisher :kucerj56 ;
+    dct:language <http://id.loc.gov/vocabulary/iso639-1/en>  ;
+    dcat:dataset 
+        :dataset-reviews ,
+        :dataset-postings ,
+        :dataset-udemy ;
+    .
+
+:kucerj56
+    a foaf:Person ;
+    foaf:firstName "Jakub"@cs ;
+    foaf:lastName "Kučera"@cs ;
+    .
+
+:dataset-reviews
+    a dcat:Dataset;
+    dct:title "Dataset of Glassdoor reviews"@en ;
+    dcat:keyword "review"@en, "Glassdoor"@en, "job"@en;
+    dct:description "Dataset of Glassdoor reviews for companies by their employees"@en ;
+    dcat:distribution :dataset-reviews-ttl ;
+    .
+
+:dataset-reviews-ttl
+    a dcat:Distribution ;
+    dct:title "Turtle distribution of Glassdoor reviews codes"@en ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> ;
+    dcat:downloadURL <http://ex.org/data/reviews.ttl> ;
+    dcat:accessURL <http://ex.org/review/> ;
+    .
+
+:dataset-postings
+    a dcat:Dataset;
+    dct:title "Dataset of jobs postings"@en ;
+    dcat:keyword "posting"@en, "vacancy"@en, "job"@en, "position"@en;
+    dct:description "Dataset of job postings by companies"@en ;
+    dcat:distribution :dataset-postings-ttl ;
+    .
+
+:dataset-postings-ttl
+    a dcat:Distribution ;
+    dct:title "Turtle distribution of job postings"@en ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> ;
+    dcat:downloadURL <http://ex.org/data/postings.ttl> ;
+    dcat:accessURL <http://ex.org/postings/> ;
+    .
+
+:dataset-udemy
+    a dcat:Dataset;
+    dct:title "Dataset of Udemy courses"@en ;
+    dcat:keyword "course"@en, "Udemy"@en, "web development"@en;
+    dct:description "Dataset of Udemy courses with subject related to web development"@en ;
+    dcat:distribution :dataset-udemy-ttl ;
+    .
+
+:dataset-udemy-ttl
+    a dcat:Distribution ;
+    dct:title "Turtle distribution of Udemy courses"@en ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> ;
+    dcat:downloadURL <http://ex.org/data/udemy.ttl> ;
+    dcat:accessURL <http://ex.org/udemy/> ;
+    .
