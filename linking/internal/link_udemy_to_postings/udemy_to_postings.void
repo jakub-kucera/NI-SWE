@@ -1,0 +1,5 @@
+:udemy_posting a void:Linkset;
+    void:subjectsTarget :udemy;
+    void:objectsTarget :posting;
+    void:linkPredicate ex:is_course_on;
+    .

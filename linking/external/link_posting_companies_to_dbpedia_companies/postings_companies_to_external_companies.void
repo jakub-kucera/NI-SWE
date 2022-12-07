@@ -1,0 +1,5 @@
+:posting_DBpedia;
+    void:subjectsTarget :posting;
+    void:objectsTarget :DBpedia;
+    void:linkPredicate owl:sameAs;
+    .

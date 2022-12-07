@@ -1,0 +1,5 @@
+:posting__review a void:Linkset;
+    void:subjectsTarget :posting;
+    void:objectsTarget :review;
+    void:linkPredicate owl:sameAs;
+    .
