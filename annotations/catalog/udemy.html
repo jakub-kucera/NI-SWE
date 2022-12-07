@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html prefix="dcat: http://www.w3.org/ns/dcat#">
+<head></head>
+<body about="https://ex.org/udemy" typeof="dcat:Dataset">
+<h1>
+    Dataset of Udemy courses
+</h1>
+<p>
+    Dataset of Udemy courses with subject related to web development.
+</p>
+<script type="application/ld+json">{
+    "@context": "http://schema.org/",
+    "@type": "Dataset",
+    "name": "udemy",
+    "description": "Dataset of Udemy courses with subject related to web development.",
+    "url": "https://ex.org/posting",
+    "keywords": [
+        "course",
+        "udemy",
+        "web development"
+    ],
+    "creator": {
+        "@type": "Person",
+        "name": "Jakub Kučera"
+    },
+    "distribution": [
+        {
+            "@type": "DataDownload",
+            "contentUrl": "http://ex.org/data/udemy.ttl",
+            "encodingFormat": "TTL"
+        }
+    ]
+}</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html prefix="dcat: http://www.w3.org/ns/dcat#">
+<head></head>
+<body about="https://ex.org/posting" typeof="dcat:Dataset">
+<h1>
+    Dataset of jobs postings
+</h1>
+<p>
+    Dataset of job postings by companies.
+</p>
+<script type="application/ld+json">{
+    "@context": "http://schema.org/",
+    "@type": "Dataset",
+    "name": "review",
+    "description": "Dataset of job postings by companies.",
+    "url": "https://ex.org/posting",
+    "keywords": [
+        "posting",
+        "vacancy",
+        "job",
+        "position"
+    ],
+    "creator": {
+        "@type": "Person",
+        "name": "Jakub Kučera"
+    },
+    "distribution": [
+        {
+            "@type": "DataDownload",
+            "contentUrl": "http://ex.org/data/postings.ttl",
+            "encodingFormat": "TTL"
+        }
+    ]
+}</script>
+</body>
+</html>

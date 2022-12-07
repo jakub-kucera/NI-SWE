@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html prefix="dcat: http://www.w3.org/ns/dcat#">
+<head></head>
+<body about="https://ex.org/review" typeof="dcat:Dataset">
+<h1>
+    Dataset of Glassdoor reviews
+</h1>
+<p>
+    Dataset of Glassdoor reviews for companies by their employees.
+</p>
+<script type="application/ld+json">{
+    "@context": "http://schema.org/",
+    "@type": "Dataset",
+    "name": "review",
+    "description": "Dataset of Glassdoor reviews for companies by their employees.",
+    "url": "https://ex.org/review",
+    "keywords": [
+        "review",
+        "Glassdoor",
+        "job"
+    ],
+    "creator": {
+        "@type": "Person",
+        "name": "Jakub Kučera"
+    },
+    "distribution": [
+        {
+            "@type": "DataDownload",
+            "contentUrl": "http://ex.org/data/reviews.ttl",
+            "encodingFormat": "TTL"
+        }
+    ]
+}</script>
+</body>
+</html>
