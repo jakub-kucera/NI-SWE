@@ -1,0 +1,130 @@
+# check if rating is in range [0, 1]
+
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix ex:  <http://ex.org/> .
+
+ex:course a rdfs:NodeShape;
+     sh:targetClass ex:course ;
+  sh:property
+    [
+      sh:path ex:rating ;
+      sh:name "Rating is in correct range [0, 1]"@en ;
+      sh:minInclusive 0 ;
+      sh:maxInclusive 1 ;
+      sh:message "Rating value out of range"@en;
+	  sh:severity sh:Violation ;
+    ] ;
+.
+
+
+
+# check that some numberical values have value of atleast 0.
+
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix ex:  <http://ex.org/> .
+
+ex:course a rdfs:NodeShape;
+     sh:targetClass ex:course ;
+  sh:property
+    [
+      sh:path ex:price ;
+      sh:minInclusive 0 ;
+	  sh:message "Price cannot be lower than 0"@en;
+	  sh:severity sh:Violation ;
+    ],
+    [
+      sh:path ex:num_subscribers ;
+      sh:minInclusive 0 ;
+	  sh:message "Number of subscribers cannot be lower than 0"@en;
+	  sh:severity sh:Violation ;
+    ],
+    [
+      sh:path ex:num_reviews ;
+      sh:minInclusive 0 ;
+	  sh:message "Number of reviews cannot be lower than 0"@en;
+	  sh:severity sh:Violation ;
+    ],
+    [
+      sh:path ex:num_lectures ;
+      sh:minInclusive 0 ;
+      sh:message "Number of lectures cannot be lower than 0"@en;
+	  sh:severity sh:Violation ;
+    ],
+    [
+      sh:path ex:content_duration ;
+      sh:minInclusive 0 ;
+	  sh:message "Content duration cannot be lower than 0"@en;
+	  sh:severity sh:Violation ;
+    ];
+.
+
+
+# check that some numberical values are found exactly once.
+
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix ex:  <http://ex.org/> .
+
+ex:course a rdfs:NodeShape;
+     sh:targetClass ex:course ;
+  sh:property
+    [
+      sh:path ex:price ;
+      sh:minCount 1 ;
+	  sh:maxCount 1 ;
+	  sh:message "There must be only one and only price"@en;
+	  sh:severity sh:Warning ;
+    ],
+    [
+      sh:path ex:num_subscribers ;
+      sh:minCount 1 ;
+	  sh:maxCount 1 ;
+	  sh:message "There must be only one and only `Number of subscribers`"@en;
+	  sh:severity sh:Warning ;
+    ],
+    [
+      sh:path ex:num_reviews ;
+      sh:minCount 1 ;
+	  sh:maxCount 1 ;
+	  sh:message "There must be only one and only `Number of reviews`"@en;
+	  sh:severity sh:Warning ;
+    ],
+    [
+      sh:path ex:num_lectures ;
+      sh:minCount 1 ;
+	  sh:maxCount 1 ;
+	  sh:message "There must be only one and only `Number of lectures`"@en;
+	  sh:severity sh:Warning ;
+    ],
+    [
+      sh:path ex:content_duration ;
+      sh:minCount 1 ;
+	  sh:maxCount 1 ;
+	  sh:message "There must be only one and only `Content duration`"@en;
+	  sh:severity sh:Warning ;
+    ];
+.
+
+
+# check that course titles are in English
+
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix ex:  <http://ex.org/> .
+
+ex:course a rdfs:NodeShape;
+     sh:targetClass ex:course ;
+  sh:property
+    [
+      sh:path ex:title ;
+	  sh:languageIn ("en") ;
+	  sh:message "Title must be in English"@en;
+	  sh:severity sh:Info;
+    ];
+.

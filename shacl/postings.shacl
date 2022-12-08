@@ -1,0 +1,108 @@
+# check if rating is in range [0, 1]
+
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix ex:  <http://ex.org/> .
+
+ex:course a rdfs:NodeShape;
+     sh:targetClass ex:course ;
+  sh:property
+    [
+      sh:path ex:rating ;
+      sh:name "Rating is in correct range [0, 1]"@en ;
+      sh:minInclusive 0 ;
+      sh:maxInclusive 1 ;
+      sh:message "Rating value out of range"@en;
+	  sh:severity sh:Violation ;
+    ] ;
+.
+
+# check that strings are all in english at the same time
+
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix ex:  <http://ex.org/> .
+
+ex:posting a rdfs:NodeShape;
+     sh:targetClass ex:posting ;
+  sh:and (
+    sh:property
+      [
+        sh:path ex:title ;
+        sh:languageIn ("en") ;
+        sh:message "Title must be in English"@en;
+        sh:severity sh:Info;
+      ]
+    sh:property
+      [
+        sh:path ex:term ;
+        sh:languageIn ("en") ;
+        sh:message "Term must be in English"@en;
+        sh:severity sh:Info;
+      ]
+    sh:property
+      [
+        sh:path ex:eligibility ;
+        sh:languageIn ("en") ;
+        sh:message "Eligibility must be in English"@en;
+        sh:severity sh:Info;
+      ]
+    sh:property
+      [
+        sh:path ex:audience ;
+        sh:languageIn ("en") ;
+        sh:message "Audience must be in English"@en;
+        sh:severity sh:Info;
+      ]
+    sh:property
+      [
+        sh:path ex:job_description ;
+        sh:languageIn ("en") ;
+        sh:message "Job description must be in English"@en;
+        sh:severity sh:Info;
+      ]
+    sh:property
+      [
+        sh:path ex:job_requirment ;
+        sh:languageIn ("en") ;
+        sh:message "Job requirement must be in English"@en;
+        sh:severity sh:Info;
+      ]
+    sh:property
+      [
+        sh:path ex:required_qualification ;
+        sh:languageIn ("en") ;
+        sh:message "Required qualification must be in English"@en;
+        sh:severity sh:Info;
+      ]
+    sh:property
+      [
+        sh:path ex:salary ;
+        sh:languageIn ("en") ;
+        sh:message "Salary must be in English"@en;
+        sh:severity sh:Info;
+      ]
+    sh:property
+      [
+        sh:path ex:application_procedure ;
+        sh:languageIn ("en") ;
+        sh:message "Application procedure must be in English"@en;
+        sh:severity sh:Info;
+      ]
+    sh:property
+      [
+        sh:path ex:notes ;
+        sh:languageIn ("en") ;
+        sh:message "Notes must be in English"@en;
+        sh:severity sh:Info;
+      ]
+    sh:property
+      [
+        sh:path ex:attach ;
+        sh:languageIn ("en") ;
+        sh:message "Attachement must be in English"@en;
+        sh:severity sh:Info;
+      ]
+   ).
