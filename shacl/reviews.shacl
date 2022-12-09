@@ -1,0 +1,19 @@
+# check that Overall rating values are in correct range
+
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix ex:  <http://ex.org/> .
+
+ex:review_shape a rdfs:NodeShape;
+     sh:targetClass ex:review ;
+  sh:property
+    [
+      sh:path ex:rating_overall_rating ;
+      sh:name "Overall Rating is in correct range [1, 5]"@en ;
+      sh:minInclusive 1 ;
+      sh:maxInclusive 5 ;
+      sh:message "Rating value out of range"@en;
+	  sh:severity sh:Violation ;
+    ] ;
+.

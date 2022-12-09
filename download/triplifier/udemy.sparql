@@ -24,8 +24,8 @@ WHERE {
 	BIND (xsd:integer(?num_reviews) AS ?num_reviews_int)
 	BIND (xsd:integer(?num_lectures) AS ?num_lectures_int)
 	BIND(STRLANG(?level,"en") as ?level_str)
-	BIND (xsd:float(?Rating) AS ?rating_float)
-	BIND (xsd:float(?content_duration) AS ?content_duration_float)
+	BIND (xsd:double(?Rating) AS ?rating_float)
+	BIND (xsd:double(?content_duration) AS ?content_duration_float)
 	BIND(STRLANG(?subject,"en") as ?subject_str)
 	
 }

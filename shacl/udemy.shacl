@@ -5,7 +5,7 @@
 @prefix schema: <http://schema.org/> .
 @prefix ex:  <http://ex.org/> .
 
-ex:course a rdfs:NodeShape;
+ex:course_shape a rdfs:NodeShape;
      sh:targetClass ex:course ;
   sh:property
     [
@@ -27,7 +27,7 @@ ex:course a rdfs:NodeShape;
 @prefix schema: <http://schema.org/> .
 @prefix ex:  <http://ex.org/> .
 
-ex:course a rdfs:NodeShape;
+ex:course_shape a rdfs:NodeShape;
      sh:targetClass ex:course ;
   sh:property
     [
@@ -70,7 +70,7 @@ ex:course a rdfs:NodeShape;
 @prefix schema: <http://schema.org/> .
 @prefix ex:  <http://ex.org/> .
 
-ex:course a rdfs:NodeShape;
+ex:course_shape a rdfs:NodeShape;
      sh:targetClass ex:course ;
   sh:property
     [
@@ -118,7 +118,7 @@ ex:course a rdfs:NodeShape;
 @prefix schema: <http://schema.org/> .
 @prefix ex:  <http://ex.org/> .
 
-ex:course a rdfs:NodeShape;
+ex:course_shape a rdfs:NodeShape;
      sh:targetClass ex:course ;
   sh:property
     [
